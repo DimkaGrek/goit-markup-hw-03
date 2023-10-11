@@ -45,9 +45,9 @@ img {
 }
 
 .container {
-    max-width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,6 +66,9 @@ img {
 }
 
 /* HEADER */
+.head {
+    border-bottom: 1px solid #e7e9fc;
+}
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -89,7 +92,7 @@ nav {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    margin-right: 75px;
+    margin-right: 76px;
     text-decoration: none;
 }
 .logo-part {
@@ -102,6 +105,8 @@ nav {
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -123,6 +128,8 @@ nav {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .address-info:hover,
 .address-info:focus {
@@ -134,10 +141,12 @@ nav {
 
 /* MAIN */
 /* Hero Section */
+.hero-section {
+}
 .hero {
-    background-color: var(--NAVY-BLUE);
     padding-top: 188px;
     padding-bottom: 188px;
+    background-color: var(--NAVY-BLUE);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,11 +159,12 @@ nav {
     font-weight: 700;
     line-height: 1.07; /* 107.143% */
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     white-space: normal;
     /* margin-bottom: 48px; */
 }
 .hero-btn {
+    border: none;
     background-color: var(--IRIS);
     color: var(--WHITE);
     font-size: 16px;
@@ -165,6 +175,8 @@ nav {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -177,10 +189,10 @@ nav {
 }
 .mastery-list {
     display: flex;
-    gap: 20px;
+    gap: 22px;
 }
 .mastery-item {
-    flex-basis: ((100% - 72px) / 4);
+    width: ((100% - 72px) / 4);
 }
 .mastery-title {
     color: var(--NAVY-BLUE);
@@ -205,6 +217,7 @@ nav {
 }
 .activites-list {
     display: flex;
+    gap: 24px;
 }
 .activites-title {
     color: var(--NAVY-BLUE);
@@ -218,7 +231,6 @@ nav {
 }
 .activites-item {
     background: var(--CORNFLOWER);
-    margin-right: 24px;
 }
 
 /* Our Team */
@@ -248,8 +260,8 @@ nav {
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.team-card img {
-    margin-bottom: 32px;
+.person-info {
+    padding: 32px 0;
 }
 .team-card h3 {
     color: var(--NAVY-BLUE);
@@ -268,7 +280,6 @@ nav {
     font-weight: 400;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
 }
 
 /* Footer */
@@ -277,7 +288,10 @@ nav {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+.logo-foot {
+    display: inline;
+    margin-bottom: 16px;
+}
 .logo-white {
     color: var(--CLOUD);
 }
@@ -287,16 +301,19 @@ nav {
     font-weight: 400;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
-    margin-top: 18px;
+    margin-top: 16px;
     width: 264px;
 }
 
 /* -- Portfolio -- */
 /* Buttons */
+.main-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .buttons {
     display: flex;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
     gap: 24px;
 }
@@ -319,11 +336,11 @@ nav {
 .btn:focus {
     color: var(--WHITE);
     background-color: var(--OCEAN);
+    border: 1px solid transparent;
 }
 
 /* Section Portfolio */
 .services {
-    padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 21px;
@@ -332,18 +349,18 @@ nav {
 .row-item {
     border: 1px solid var(--CORNFLOWER);
 }
-
-.row-item-title,
-.row-item-text {
-    padding-left: 16px;
+.row-item-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
+
 .row-item-title {
     color: var(--NAVY-BLUE);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2; /* 120% */
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 .row-item-text {
@@ -352,5 +369,4 @@ nav {
     font-weight: 400;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
 }
