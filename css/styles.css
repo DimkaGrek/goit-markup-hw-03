@@ -46,7 +46,8 @@ img {
 
 .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -183,7 +184,7 @@ nav {
 }
 
 /* Section 2 - Mastery */
-.mastery {
+.mastery-section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
