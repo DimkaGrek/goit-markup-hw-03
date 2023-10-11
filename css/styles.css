@@ -46,8 +46,8 @@ img {
 
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,6 +142,7 @@ nav {
 /* MAIN */
 /* Hero Section */
 .hero-section {
+    /* padding: 188px 0; */
 }
 .hero {
     padding-top: 188px;
