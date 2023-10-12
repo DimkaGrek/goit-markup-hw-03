@@ -68,8 +68,6 @@ img {
     border-bottom: 1px solid #e7e9fc;
 }
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
 }
@@ -92,6 +90,8 @@ nav {
     text-transform: uppercase;
     margin-right: 76px;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo-part {
     color: var(--NAVY-BLUE);
@@ -111,7 +111,7 @@ nav {
     color: var(--OCEAN);
 }
 .menu-item {
-    width: ((100% - 80px) / 3);
+    width: calc((100% - 80px) / 3);
 }
 
 .address {
@@ -126,8 +126,6 @@ nav {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .address-info:hover,
 .address-info:focus {
@@ -135,6 +133,8 @@ nav {
 }
 .address-item {
     flex-basis: calc((100% - 40px) / 2);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 /* MAIN */
